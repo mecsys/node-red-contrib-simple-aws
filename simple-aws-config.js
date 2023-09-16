@@ -9,7 +9,7 @@ module.exports = function(RED) {
   }
   RED.nodes.registerType("AWS Config",AWSConfigNode,{credentials: {
      accessKey: {type:"text"},
-     secretKey: {type:"password"}
+     secretKey: {type:"password"},
      sessionToken: {type:"session token"}
    }});
 }
