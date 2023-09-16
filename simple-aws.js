@@ -17,7 +17,8 @@ module.exports = function(RED) {
         */
 		    AWS.config.update({
 			    accessKeyId: awsConfig.accessKey,
-			    secretAccessKey: awsConfig.secretKey
+			    secretAccessKey: awsConfig.secretKey,
+          sessionToken: awsConfig.sessionToken
 		    });
 
         let serviceOptions = {}

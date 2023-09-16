@@ -7,7 +7,8 @@
     },
     credentials: {
       accessKey: {type:"text"},
-      secretKey: {type:"password"}
+      secretKey: {type:"password"},
+      sessionToken: {type:"session token"}
     },
     label: function() {
       return this.name;
@@ -50,4 +51,8 @@
         <label for="node-config-input-secretKey"><i class="icon-bookmark"></i> Secret Key</label>
         <input type="password" id="node-config-input-secretKey">
     </div>
+    <div class="form-row">
+      <label for="node-config-input-sessionToken"><i class="icon-bookmark"></i> Session token</label>
+      <input type="password" id="node-config-input-sessionToken">
+  </div>
 </script>
